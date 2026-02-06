@@ -1,0 +1,10 @@
+{
+  "Records": [
+    {
+      "s3": {
+        "bucket": {"name": "meticsxmin_dev"},
+        "object": {"key": "raw/year=2026/month=02/day=05/hour=10/auth-api-10-05_.csv"}
+      }
+    }
+  ]
+}

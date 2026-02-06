@@ -1,0 +1,32 @@
+{
+  "name": "cdk-multienv-data-lake-platform",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk",
+    "synth": "cdk synth",
+    "test:py": "py -3 -m unittest discover -s handlers -t . -p test_*.py",
+    "deploy:dev": "cdk deploy -c stage=dev",
+    "deploy:qa": "cdk deploy -c stage=qa",
+    "deploy:prod": "cdk deploy -c stage=prod"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/aws-lambda": "^8.10.148",
+    "aws-cdk": "^2.180.0",
+    "esbuild": "^0.25.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.180.0",
+    "constructs": "^10.4.2",
+    "@aws-sdk/client-athena": "^3.760.0",
+    "@aws-sdk/client-glue": "^3.760.0",
+    "@aws-sdk/client-s3": "^3.760.0",
+    "source-map-support": "^0.5.21"
+  }
+}

@@ -1,0 +1,23 @@
+node_modules
+
+__pycache__/
+*.pyc
+
+legacy/
+EXTERNO/
+
+# CDK / build outputs
+cdk.out/
+dist/
+
+# Virtual envs / local configs
+.venv/
+.env
+.env.*
+.pytest_cache/
+.coverage*
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
